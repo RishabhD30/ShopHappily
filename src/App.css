@@ -1,6 +1,22 @@
 .App {
   text-align: center;
 }
+.header{
+  background-color: grey;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+a{
+  font-size:28px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: chartreuse;
+}
 
 .App-logo {
   height: 40vmin;
@@ -13,26 +29,350 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #007bff; /* Bootstrap primary color */
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.navbar-brand h1 {
+  color: white;
+  margin: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link h4 {
+  margin: 0;
+}
+
+.nav-link:hover {
+  color: #ffcc00; /* A color to highlight on hover */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Bootstrap danger color */
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: not-allowed;
+}
+
+/* Additional styles for spacing and alignment */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse {
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #000;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+.shophappily:hover{color: #ffcc00;}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color:cadetblue;
+  margin: 0;
+  padding: 0;
+}
+
+
+      /* //Body.js */
+button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-item {
+  margin: 1rem;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Edit form styles */
+.edit-album {
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.edit-album h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.edit-album label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.edit-album input {
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: block;
+}
+
+.update-button {
+  display: block;
+  width: calc(100% - 1rem);
+  padding: 0.5rem;
+  margin: 1rem auto;
+  background-color: #28a745; /* Bootstrap success color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #218838;
+}
+
+/* Checkout.js */
+
+h2 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cart-items-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* Cart item styles */
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+
+.cart-img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.cart-details {
+  margin-left: 1rem;
+  flex: 1;
+}
+
+.cart-details h4 {
+  margin: 0.5rem 0;
+}
+
+.cart-details h5 {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffc107; /* Bootstrap warning color */
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.btn:hover {
+  background-color: #e0a800;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*    Add-Products .js       */
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+.col-md-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (max-width: 576px) {
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
